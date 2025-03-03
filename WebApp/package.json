@@ -1,0 +1,31 @@
+{
+  "name": "dontkillplants",
+  "version": "1.0.0",
+  "description": "https://docs.google.com/document/d/1bJR-B_plagiwF40nZNEB6ATOiIpI5_DY9gIaRt5F6KY/edit?usp=sharing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./backend/backend.js",
+    "setup:mac": "sh ./scripts/install_mysql_macos.sh && npm run setup:db",
+    "setup:win": "powershell -ExecutionPolicy Bypass -File ./scripts/install_mysql_windows.ps1 && npm run setup:db",
+    "setup:db": "node ./scripts/load-database.js",
+    "install:mysql": "cross-env IS_WINDOWS=true npm run install:mysql:windows || npm run install:mysql:macos",
+    "setup": "echo 'Please run npm setup:mac or npm setup:win'",
+    "postinstall": "node ./platform-setup.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.4.0",
+    "bcrypt": "^5.1.1",
+    "choco": "^0.2.1",
+    "express": "^4.21.2",
+    "mysql2": "^3.11.3",
+    "pg": "^8.13.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "shelljs": "^0.8.5"
+  }
+}
