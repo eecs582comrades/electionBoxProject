@@ -2,5 +2,5 @@
 
 ./scripts/setup.sh
 npm install
-CREATE DATABASE electionbox;
+echo "create database `electonbox`" | mysql -u root -p
 node ./scripts/load-database.js
