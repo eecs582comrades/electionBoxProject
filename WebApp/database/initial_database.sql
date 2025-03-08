@@ -18,7 +18,7 @@ DROP TABLE IF EXISTS `ballots`;
 
 -- Create the `plants` table with FULLTEXT indexes on searchable fields
 CREATE TABLE `ballots` (
-  `ballot_id` int NOT NULL,
+  `ballot_id` int NOT NULL AUTO_INCREMENT,
   `barcode_data` text DEFAULT NULL,
   `date` text DEFAULT NULL,
   `time` text DEFAULT NULL,
