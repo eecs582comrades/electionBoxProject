@@ -72,7 +72,12 @@ app.get('/test', (req, res) => {
   });
 });
 
+app.post('/envelopeData', (req, res) => {
+  console.log(req.data);
+  res.status(200).send("Received")
+});
 
+//no
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 })
