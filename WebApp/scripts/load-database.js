@@ -53,6 +53,7 @@ async function load_data() {
     // Iterate through each plant record
     for (const ballot of jsonData) {
       const ballotId = ballot["ballot_id"];
+      const barcodeData = ballot["barcode_data"];
       const name = ballot["name"];
       const date = ballot["date"];
       const time = ballot["time"]
@@ -84,12 +85,14 @@ async function load_data() {
           const insertSQL = `
             INSERT INTO ballots (
               ballot_id,
+              barcode_data,
               name,
               date,
               time,
               location
             ) VALUES (
               '${ballotId}',
+              '${barcodeData.replace(/'/g, "''")}',
               '${name.replace(/'/g, "''")}',
               '${date.replace(/'/g, "''")}',
               '${time}',
