@@ -32,7 +32,7 @@ const cors = require('cors');
 
 const app = express();
 app.use(cors());
-const port = 5100;
+const port = 9100;
 const localNetworkHost = '0.0.0.0';
 
 const bcrypt = require('bcrypt');
@@ -74,7 +74,14 @@ app.get('/test', (req, res) => {
 
 app.post('/envelopeData', (req, res) => {
   console.log(req.data);
-  res.status(200).send("Received")
+  connection.query('INSERT INTO ballots (barcode_data, date, time, location, name) AS (?, ?, ?, ?, ?)', [req.data['IMB'], req.data['DATE'], req.data['TIME'], req.data['LOCATION'], req.data['OCR']], (err, results) => {
+    if (err) {
+      console.error('Error pushing ballot data:', err);
+      res.status(500).send('Server error');
+      return;
+    }
+    res.status(200).send("200 OK");
+  });
 });
 
 //no
