@@ -2,4 +2,4 @@
 
 ./scripts/setup.sh
 npm install
-node ./scripts/load_database.js
+node ./scripts/load-database.js
