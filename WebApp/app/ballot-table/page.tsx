@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { BallotTable } from "./components/ballotTable";
+import { BallotTable } from "../components/ballotTable";
 
 export default function MyComponent() {
   const [data, setData] = useState(null);
