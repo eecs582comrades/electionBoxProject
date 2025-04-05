@@ -4,31 +4,15 @@ console.log("Hello World")
 // Date Created: 3-4-25
 // Dates Revised: 3-4-25
 // Brief description of each revision & author:
-//
-// THE FOLLOWING APIs EXIST:
-// /search/{plantName}, returns all plants found
-// /search/{plantId}, returns all plants found
-// /account/pull/{username}/{password}, returns account if it exists
-// /account/add/{username}/{password}, returns 201 if works
-// /account/change/{username}/{oldpassword}/{newpassword}, changes password
-// /simulations/{user_id}, returns all simulations found under that user Id
-// /simulations/delete/{simulation_id}, deletes simulation
-// /simulations/add/{user_id}/{plant_id}, creates a simulation under that user id with the plant id
-// /account/darkMode/{userId}/{darkMode}, updates user's darkmode preference
-// /account/guy/{userId}/{guyPreference}, updates guy preference
-// /account/pull_preference/darkMode/{userId}, returns preference for user of darkmode
-// /account/pull_preference/guy/{userId}, returns preference for user of guy
-// all APIs return 500 if there is an internal server error
-// MySQL has no password, account accordingly
-//
 
 const express = require('express')
 const http = require('http');
 const bodyParser = require('body-parser');
 const mysql = require('mysql2');
 const path = require('path');
-
+const crypto = require('node:crypto')
 const cors = require('cors');
+const fs = require('fs')
 
 const app = express();
 app.use(cors());
@@ -87,11 +71,11 @@ app.post('/envelopeData', (req, res) => {
 //no
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
-})
+});
 
 app.post('/', (req, res) => {
     res.send('Got a POST request')
-})
+});
 
 // Registers the app to use bodyParser to make our lives easier and avoid needing to decode json frequently.
 app.use(bodyParser.json());
