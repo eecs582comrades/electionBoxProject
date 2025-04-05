@@ -1,0 +1,173 @@
+2025-03-18 04:59:40,516 - INFO - Starting main thread manager...
+2025-03-18 04:59:40,517 - INFO - Started monitoring folder: /home/shared/code/cache1
+2025-03-18 04:59:40,517 - INFO - Started monitoring folder: /home/shared/code/cache2
+2025-03-18 05:02:46,314 - INFO - New file detected: /home/shared/code/cache1/85814852-2433-4c61-b93a-bb25b99dd49f_preprocessing.pkl in folder: /home/shared/code/cache1
+2025-03-18 05:02:46,314 - INFO - Calling function 'processPictures' for file: /home/shared/code/cache1/85814852-2433-4c61-b93a-bb25b99dd49f_preprocessing.pkl
+2025-03-18 05:02:49,525 - INFO - New file detected: /home/shared/code/cache2/85814852-2433-4c61-b93a-bb25b99dd49fDEBUG0.jpg in folder: /home/shared/code/cache2
+2025-03-18 05:02:49,525 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/85814852-2433-4c61-b93a-bb25b99dd49fDEBUG0.jpg
+2025-03-18 05:02:49,574 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/85814852-2433-4c61-b93a-bb25b99dd49fDEBUG0.jpg': list index out of range
+2025-03-18 05:02:49,574 - INFO - New file detected: /home/shared/code/cache2/85814852-2433-4c61-b93a-bb25b99dd49fDEBUG1.jpg in folder: /home/shared/code/cache2
+2025-03-18 05:02:49,575 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/85814852-2433-4c61-b93a-bb25b99dd49fDEBUG1.jpg
+2025-03-18 05:02:49,601 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/85814852-2433-4c61-b93a-bb25b99dd49fDEBUG1.jpg': list index out of range
+2025-03-18 05:07:15,426 - INFO - New file detected: /home/shared/code/cache1/8682ac59-4a05-45cf-949f-34a6aff07f59_preprocessing.pkl in folder: /home/shared/code/cache1
+2025-03-18 05:07:15,426 - INFO - Calling function 'processPictures' for file: /home/shared/code/cache1/8682ac59-4a05-45cf-949f-34a6aff07f59_preprocessing.pkl
+2025-03-18 05:07:18,256 - INFO - New file detected: /home/shared/code/cache2/8682ac59-4a05-45cf-949f-34a6aff07f59DEBUG0.jpg in folder: /home/shared/code/cache2
+2025-03-18 05:07:18,256 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/8682ac59-4a05-45cf-949f-34a6aff07f59DEBUG0.jpg
+2025-03-18 05:07:18,287 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/8682ac59-4a05-45cf-949f-34a6aff07f59DEBUG0.jpg': list index out of range
+2025-03-18 05:07:18,287 - INFO - New file detected: /home/shared/code/cache2/8682ac59-4a05-45cf-949f-34a6aff07f59DEBUG1.jpg in folder: /home/shared/code/cache2
+2025-03-18 05:07:18,287 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/8682ac59-4a05-45cf-949f-34a6aff07f59DEBUG1.jpg
+2025-03-18 05:07:18,319 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/8682ac59-4a05-45cf-949f-34a6aff07f59DEBUG1.jpg': list index out of range
+2025-03-18 05:07:59,669 - INFO - New file detected: /home/shared/code/cache1/c0581781-ac61-4c51-89f1-d495738e783a_preprocessing.pkl in folder: /home/shared/code/cache1
+2025-03-18 05:07:59,669 - INFO - Calling function 'processPictures' for file: /home/shared/code/cache1/c0581781-ac61-4c51-89f1-d495738e783a_preprocessing.pkl
+2025-03-18 05:08:02,566 - INFO - New file detected: /home/shared/code/cache2/c0581781-ac61-4c51-89f1-d495738e783aDEBUG0.jpg in folder: /home/shared/code/cache2
+2025-03-18 05:08:02,566 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/c0581781-ac61-4c51-89f1-d495738e783aDEBUG0.jpg
+2025-03-18 05:08:51,760 - INFO - Camera stopped
+2025-03-18 05:08:51,766 - INFO - Camera closed successfully.
+2025-03-18 05:08:51,797 - INFO - Camera stopped
+2025-03-18 05:08:52,006 - INFO - Camera closed successfully.
+2025-03-18 05:08:57,290 - INFO - Starting main thread manager...
+2025-03-18 05:08:57,291 - INFO - Started monitoring folder: /home/shared/code/cache1
+2025-03-18 05:08:57,291 - INFO - Started monitoring folder: /home/shared/code/cache2
+2025-03-18 05:09:01,363 - INFO - New file detected: /home/shared/code/cache1/898ff594-cead-4169-8717-3dae33edb668_preprocessing.pkl in folder: /home/shared/code/cache1
+2025-03-18 05:09:01,363 - INFO - Calling function 'processPictures' for file: /home/shared/code/cache1/898ff594-cead-4169-8717-3dae33edb668_preprocessing.pkl
+2025-03-18 05:09:04,414 - INFO - New file detected: /home/shared/code/cache2/898ff594-cead-4169-8717-3dae33edb668DEBUG0.jpg in folder: /home/shared/code/cache2
+2025-03-18 05:09:04,414 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/898ff594-cead-4169-8717-3dae33edb668DEBUG0.jpg
+2025-03-18 05:10:57,135 - INFO - Camera stopped
+2025-03-18 05:10:57,141 - INFO - Camera closed successfully.
+2025-03-18 05:10:57,172 - INFO - Camera stopped
+2025-03-18 05:10:57,181 - INFO - Camera closed successfully.
+2025-03-18 05:11:19,060 - INFO - Starting main thread manager...
+2025-03-18 05:11:19,061 - INFO - Started monitoring folder: /home/shared/code/cache1
+2025-03-18 05:11:19,061 - INFO - Started monitoring folder: /home/shared/code/cache2
+2025-03-18 05:11:27,120 - INFO - New file detected: /home/shared/code/cache1/2a35edec-ce76-4ddd-b830-2a75fd8fe20e_preprocessing.pkl in folder: /home/shared/code/cache1
+2025-03-18 05:11:27,120 - INFO - Calling function 'processPictures' for file: /home/shared/code/cache1/2a35edec-ce76-4ddd-b830-2a75fd8fe20e_preprocessing.pkl
+2025-03-18 05:11:30,270 - INFO - New file detected: /home/shared/code/cache2/2a35edec-ce76-4ddd-b830-2a75fd8fe20eDEBUG0.jpg in folder: /home/shared/code/cache2
+2025-03-18 05:11:30,270 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/2a35edec-ce76-4ddd-b830-2a75fd8fe20eDEBUG0.jpg
+2025-03-18 05:11:30,298 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/2a35edec-ce76-4ddd-b830-2a75fd8fe20eDEBUG0.jpg': list index out of range
+2025-03-18 05:11:30,298 - INFO - New file detected: /home/shared/code/cache2/2a35edec-ce76-4ddd-b830-2a75fd8fe20eDEBUG1.jpg in folder: /home/shared/code/cache2
+2025-03-18 05:11:30,299 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/2a35edec-ce76-4ddd-b830-2a75fd8fe20eDEBUG1.jpg
+2025-03-18 05:11:30,324 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/2a35edec-ce76-4ddd-b830-2a75fd8fe20eDEBUG1.jpg': list index out of range
+2025-03-18 05:17:33,672 - INFO - Camera stopped
+2025-03-18 05:17:33,678 - INFO - Camera closed successfully.
+2025-03-18 05:17:33,709 - INFO - Camera stopped
+2025-03-19 21:19:48,234 - INFO - Starting main thread manager...
+2025-03-19 21:19:48,236 - INFO - Started monitoring folder: /home/shared/code/cache1
+2025-03-19 21:19:48,236 - INFO - Started monitoring folder: /home/shared/code/cache2
+2025-03-19 21:21:42,450 - INFO - New file detected: /home/shared/code/cache1/93af75f1-1f97-4793-a9cd-6499711ccaa2_preprocessing.pkl in folder: /home/shared/code/cache1
+2025-03-19 21:21:42,450 - INFO - Calling function 'processPictures' for file: /home/shared/code/cache1/93af75f1-1f97-4793-a9cd-6499711ccaa2_preprocessing.pkl
+2025-03-19 21:21:46,016 - INFO - New file detected: /home/shared/code/cache2/93af75f1-1f97-4793-a9cd-6499711ccaa2DEBUG0.jpg in folder: /home/shared/code/cache2
+2025-03-19 21:21:46,016 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/93af75f1-1f97-4793-a9cd-6499711ccaa2DEBUG0.jpg
+2025-03-19 21:21:46,110 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/93af75f1-1f97-4793-a9cd-6499711ccaa2DEBUG0.jpg': list index out of range
+2025-03-19 21:21:46,110 - INFO - New file detected: /home/shared/code/cache2/93af75f1-1f97-4793-a9cd-6499711ccaa2DEBUG1.jpg in folder: /home/shared/code/cache2
+2025-03-19 21:21:46,110 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/93af75f1-1f97-4793-a9cd-6499711ccaa2DEBUG1.jpg
+2025-03-19 21:21:46,139 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/93af75f1-1f97-4793-a9cd-6499711ccaa2DEBUG1.jpg': list index out of range
+2025-03-19 21:25:20,362 - INFO - New file detected: /home/shared/code/cache1/7c58a30a-3013-4ac4-9f8f-84e5ffbbdd4a_preprocessing.pkl in folder: /home/shared/code/cache1
+2025-03-19 21:25:20,363 - INFO - Calling function 'processPictures' for file: /home/shared/code/cache1/7c58a30a-3013-4ac4-9f8f-84e5ffbbdd4a_preprocessing.pkl
+2025-03-19 21:25:23,601 - INFO - New file detected: /home/shared/code/cache2/7c58a30a-3013-4ac4-9f8f-84e5ffbbdd4aDEBUG0.jpg in folder: /home/shared/code/cache2
+2025-03-19 21:25:23,601 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/7c58a30a-3013-4ac4-9f8f-84e5ffbbdd4aDEBUG0.jpg
+2025-03-19 21:25:23,632 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/7c58a30a-3013-4ac4-9f8f-84e5ffbbdd4aDEBUG0.jpg': list index out of range
+2025-03-19 21:25:23,632 - INFO - New file detected: /home/shared/code/cache2/7c58a30a-3013-4ac4-9f8f-84e5ffbbdd4aDEBUG1.jpg in folder: /home/shared/code/cache2
+2025-03-19 21:25:23,632 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/7c58a30a-3013-4ac4-9f8f-84e5ffbbdd4aDEBUG1.jpg
+2025-03-19 21:46:22,118 - INFO - Starting main thread manager...
+2025-03-19 21:46:22,119 - INFO - Started monitoring folder: /home/shared/code/cache1
+2025-03-19 21:46:22,119 - INFO - Started monitoring folder: /home/shared/code/cache2
+2025-03-19 21:46:39,525 - INFO - New file detected: /home/shared/code/cache1/aa72f963-0026-4288-8b5a-bdcf8e69feed_preprocessing.pkl in folder: /home/shared/code/cache1
+2025-03-19 21:46:39,525 - INFO - Calling function 'processPictures' for file: /home/shared/code/cache1/aa72f963-0026-4288-8b5a-bdcf8e69feed_preprocessing.pkl
+2025-03-19 21:46:42,954 - INFO - New file detected: /home/shared/code/cache2/aa72f963-0026-4288-8b5a-bdcf8e69feedDEBUG0.jpg in folder: /home/shared/code/cache2
+2025-03-19 21:46:42,954 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/aa72f963-0026-4288-8b5a-bdcf8e69feedDEBUG0.jpg
+2025-03-19 21:46:43,007 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/aa72f963-0026-4288-8b5a-bdcf8e69feedDEBUG0.jpg': list index out of range
+2025-03-19 21:46:43,007 - INFO - New file detected: /home/shared/code/cache2/aa72f963-0026-4288-8b5a-bdcf8e69feedDEBUG1.jpg in folder: /home/shared/code/cache2
+2025-03-19 21:46:43,007 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/aa72f963-0026-4288-8b5a-bdcf8e69feedDEBUG1.jpg
+2025-03-19 21:49:59,261 - INFO - Camera stopped
+2025-03-19 21:49:59,268 - INFO - Camera closed successfully.
+2025-03-19 21:49:59,287 - INFO - Camera stopped
+2025-03-19 21:49:59,490 - INFO - Camera closed successfully.
+2025-03-19 21:50:04,832 - INFO - Starting main thread manager...
+2025-03-19 21:50:04,833 - INFO - Started monitoring folder: /home/shared/code/cache1
+2025-03-19 21:50:04,833 - INFO - Started monitoring folder: /home/shared/code/cache2
+2025-03-19 21:50:10,061 - INFO - New file detected: /home/shared/code/cache1/f6adb49f-aff4-4279-924a-ab2a0ca491cb_preprocessing.pkl in folder: /home/shared/code/cache1
+2025-03-19 21:50:10,061 - INFO - Calling function 'processPictures' for file: /home/shared/code/cache1/f6adb49f-aff4-4279-924a-ab2a0ca491cb_preprocessing.pkl
+2025-03-19 21:50:13,420 - INFO - New file detected: /home/shared/code/cache2/f6adb49f-aff4-4279-924a-ab2a0ca491cbDEBUG0.jpg in folder: /home/shared/code/cache2
+2025-03-19 21:50:13,421 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/f6adb49f-aff4-4279-924a-ab2a0ca491cbDEBUG0.jpg
+2025-03-19 21:51:16,830 - INFO - Camera stopped
+2025-03-19 21:51:16,836 - INFO - Camera closed successfully.
+2025-03-19 21:51:16,868 - INFO - Camera stopped
+2025-03-19 21:51:17,071 - INFO - Camera closed successfully.
+2025-03-19 21:51:22,128 - INFO - Starting main thread manager...
+2025-03-19 21:51:22,129 - INFO - Started monitoring folder: /home/shared/code/cache1
+2025-03-19 21:51:22,129 - INFO - Started monitoring folder: /home/shared/code/cache2
+2025-03-19 21:51:25,833 - INFO - New file detected: /home/shared/code/cache1/7d2fe4d6-dfc5-49c5-91b0-b67cccaa39a9_preprocessing.pkl in folder: /home/shared/code/cache1
+2025-03-19 21:51:25,834 - INFO - Calling function 'processPictures' for file: /home/shared/code/cache1/7d2fe4d6-dfc5-49c5-91b0-b67cccaa39a9_preprocessing.pkl
+2025-03-19 21:51:29,170 - INFO - New file detected: /home/shared/code/cache2/7d2fe4d6-dfc5-49c5-91b0-b67cccaa39a9DEBUG0.jpg in folder: /home/shared/code/cache2
+2025-03-19 21:51:29,170 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/7d2fe4d6-dfc5-49c5-91b0-b67cccaa39a9DEBUG0.jpg
+2025-03-19 21:51:29,201 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/7d2fe4d6-dfc5-49c5-91b0-b67cccaa39a9DEBUG0.jpg': list index out of range
+2025-03-19 21:51:29,201 - INFO - New file detected: /home/shared/code/cache2/7d2fe4d6-dfc5-49c5-91b0-b67cccaa39a9DEBUG1.jpg in folder: /home/shared/code/cache2
+2025-03-19 21:51:29,201 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/7d2fe4d6-dfc5-49c5-91b0-b67cccaa39a9DEBUG1.jpg
+2025-03-19 21:51:29,232 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/7d2fe4d6-dfc5-49c5-91b0-b67cccaa39a9DEBUG1.jpg': list index out of range
+2025-03-19 21:52:26,494 - INFO - Camera stopped
+2025-03-19 21:52:26,500 - INFO - Camera closed successfully.
+2025-03-19 21:52:26,531 - INFO - Camera stopped
+2025-03-19 21:52:26,539 - INFO - Camera closed successfully.
+2025-03-19 21:52:31,526 - INFO - Starting main thread manager...
+2025-03-19 21:52:31,534 - INFO - Started monitoring folder: /home/shared/code/cache1
+2025-03-19 21:52:31,534 - INFO - Started monitoring folder: /home/shared/code/cache2
+2025-03-19 21:52:34,753 - INFO - New file detected: /home/shared/code/cache1/0d0e11ed-6bb3-4299-b7b8-66501a26f8ef_preprocessing.pkl in folder: /home/shared/code/cache1
+2025-03-19 21:52:34,753 - INFO - Calling function 'processPictures' for file: /home/shared/code/cache1/0d0e11ed-6bb3-4299-b7b8-66501a26f8ef_preprocessing.pkl
+2025-03-19 21:52:38,099 - INFO - New file detected: /home/shared/code/cache2/0d0e11ed-6bb3-4299-b7b8-66501a26f8efDEBUG0.jpg in folder: /home/shared/code/cache2
+2025-03-19 21:52:38,100 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/0d0e11ed-6bb3-4299-b7b8-66501a26f8efDEBUG0.jpg
+2025-03-19 21:52:38,127 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/0d0e11ed-6bb3-4299-b7b8-66501a26f8efDEBUG0.jpg': list index out of range
+2025-03-19 21:52:38,127 - INFO - New file detected: /home/shared/code/cache2/0d0e11ed-6bb3-4299-b7b8-66501a26f8efDEBUG1.jpg in folder: /home/shared/code/cache2
+2025-03-19 21:52:38,127 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/0d0e11ed-6bb3-4299-b7b8-66501a26f8efDEBUG1.jpg
+2025-03-19 21:52:38,156 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/0d0e11ed-6bb3-4299-b7b8-66501a26f8efDEBUG1.jpg': list index out of range
+2025-03-19 21:54:23,393 - INFO - Camera stopped
+2025-03-19 21:54:23,399 - INFO - Camera closed successfully.
+2025-03-19 21:54:23,430 - INFO - Camera stopped
+2025-03-19 21:54:23,632 - INFO - Camera closed successfully.
+2025-03-19 22:04:01,161 - INFO - Starting main thread manager...
+2025-03-19 22:04:01,161 - INFO - Started monitoring folder: /home/shared/code/cache1
+2025-03-19 22:04:01,161 - INFO - Started monitoring folder: /home/shared/code/cache2
+2025-03-19 22:04:07,010 - INFO - New file detected: /home/shared/code/cache1/d7e92154-16c8-4b7e-be98-652d8859c517_preprocessing.pkl in folder: /home/shared/code/cache1
+2025-03-19 22:04:07,011 - INFO - Calling function 'processPictures' for file: /home/shared/code/cache1/d7e92154-16c8-4b7e-be98-652d8859c517_preprocessing.pkl
+2025-03-19 22:04:10,310 - INFO - New file detected: /home/shared/code/cache2/d7e92154-16c8-4b7e-be98-652d8859c517DEBUG0.jpg in folder: /home/shared/code/cache2
+2025-03-19 22:04:10,310 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/d7e92154-16c8-4b7e-be98-652d8859c517DEBUG0.jpg
+2025-03-19 22:05:13,532 - INFO - Camera stopped
+2025-03-19 22:05:13,538 - INFO - Camera closed successfully.
+2025-03-19 22:05:13,570 - INFO - Camera stopped
+2025-03-19 22:05:13,773 - INFO - Camera closed successfully.
+2025-03-19 22:06:05,160 - INFO - Starting main thread manager...
+2025-03-19 22:06:05,161 - INFO - Started monitoring folder: /home/shared/code/cache1
+2025-03-19 22:06:05,161 - INFO - Started monitoring folder: /home/shared/code/cache2
+2025-03-19 22:06:08,151 - INFO - New file detected: /home/shared/code/cache1/ab24818f-8771-4759-ab2f-c8308e46c5b8_preprocessing.pkl in folder: /home/shared/code/cache1
+2025-03-19 22:06:08,151 - INFO - Calling function 'processPictures' for file: /home/shared/code/cache1/ab24818f-8771-4759-ab2f-c8308e46c5b8_preprocessing.pkl
+2025-03-19 22:06:11,489 - INFO - New file detected: /home/shared/code/cache2/ab24818f-8771-4759-ab2f-c8308e46c5b8DEBUG0.jpg in folder: /home/shared/code/cache2
+2025-03-19 22:06:11,489 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/ab24818f-8771-4759-ab2f-c8308e46c5b8DEBUG0.jpg
+2025-03-19 22:06:11,521 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/ab24818f-8771-4759-ab2f-c8308e46c5b8DEBUG0.jpg': list index out of range
+2025-03-19 22:06:11,522 - INFO - New file detected: /home/shared/code/cache2/ab24818f-8771-4759-ab2f-c8308e46c5b8DEBUG1.jpg in folder: /home/shared/code/cache2
+2025-03-19 22:06:11,522 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/ab24818f-8771-4759-ab2f-c8308e46c5b8DEBUG1.jpg
+2025-03-19 22:06:11,554 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/ab24818f-8771-4759-ab2f-c8308e46c5b8DEBUG1.jpg': list index out of range
+2025-03-19 22:09:12,857 - INFO - Camera stopped
+2025-03-19 22:09:12,863 - INFO - Camera closed successfully.
+2025-03-19 22:09:12,895 - INFO - Camera stopped
+2025-03-19 22:09:13,098 - INFO - Camera closed successfully.
+2025-03-19 22:09:24,200 - INFO - Starting main thread manager...
+2025-03-19 22:09:24,201 - INFO - Started monitoring folder: /home/shared/code/cache1
+2025-03-19 22:09:24,201 - INFO - Started monitoring folder: /home/shared/code/cache2
+2025-03-19 22:09:28,232 - INFO - New file detected: /home/shared/code/cache1/1de8e4bc-d23e-47e2-b158-2b074af87703_preprocessing.pkl in folder: /home/shared/code/cache1
+2025-03-19 22:09:28,232 - INFO - Calling function 'processPictures' for file: /home/shared/code/cache1/1de8e4bc-d23e-47e2-b158-2b074af87703_preprocessing.pkl
+2025-03-19 22:09:31,665 - INFO - New file detected: /home/shared/code/cache2/1de8e4bc-d23e-47e2-b158-2b074af87703DEBUG0.jpg in folder: /home/shared/code/cache2
+2025-03-19 22:09:31,665 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/1de8e4bc-d23e-47e2-b158-2b074af87703DEBUG0.jpg
+2025-03-19 22:09:33,916 - INFO - New file detected: /home/shared/code/cache2/1de8e4bc-d23e-47e2-b158-2b074af87703DEBUG1.jpg in folder: /home/shared/code/cache2
+2025-03-19 22:09:33,916 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/1de8e4bc-d23e-47e2-b158-2b074af87703DEBUG1.jpg
+2025-03-19 22:09:33,946 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/1de8e4bc-d23e-47e2-b158-2b074af87703DEBUG1.jpg': list index out of range
+2025-03-19 22:10:07,894 - INFO - New file detected: /home/shared/code/cache1/e2771d84-48dd-403a-9806-6e8ec24a7ab2_preprocessing.pkl in folder: /home/shared/code/cache1
+2025-03-19 22:10:07,894 - INFO - Calling function 'processPictures' for file: /home/shared/code/cache1/e2771d84-48dd-403a-9806-6e8ec24a7ab2_preprocessing.pkl
+2025-03-19 22:10:11,097 - INFO - New file detected: /home/shared/code/cache2/e2771d84-48dd-403a-9806-6e8ec24a7ab2DEBUG0.jpg in folder: /home/shared/code/cache2
+2025-03-19 22:10:11,097 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/e2771d84-48dd-403a-9806-6e8ec24a7ab2DEBUG0.jpg
+2025-03-19 22:10:11,127 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/e2771d84-48dd-403a-9806-6e8ec24a7ab2DEBUG0.jpg': list index out of range
+2025-03-19 22:10:11,128 - INFO - New file detected: /home/shared/code/cache2/e2771d84-48dd-403a-9806-6e8ec24a7ab2DEBUG1.jpg in folder: /home/shared/code/cache2
+2025-03-19 22:10:11,128 - INFO - Calling function 'envelopeProcessTrigger' for file: /home/shared/code/cache2/e2771d84-48dd-403a-9806-6e8ec24a7ab2DEBUG1.jpg
+2025-03-19 22:10:11,157 - ERROR - Error executing 'envelopeProcessTrigger' on file '/home/shared/code/cache2/e2771d84-48dd-403a-9806-6e8ec24a7ab2DEBUG1.jpg': list index out of range
+2025-03-19 22:11:12,514 - INFO - Camera stopped
+2025-03-19 22:11:12,521 - INFO - Camera closed successfully.
+2025-03-19 22:11:12,552 - INFO - Camera stopped
+2025-03-19 22:11:12,761 - INFO - Camera closed successfully.

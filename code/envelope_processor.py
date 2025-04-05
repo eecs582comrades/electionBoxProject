@@ -6,7 +6,7 @@ import re
 import sys
 import subprocess
 from tabulate import tabulate
-from interpreter import extract_all_imb
+#from interpreter import extract_all_imb
 import requests
 import time
 import datetime
@@ -39,20 +39,20 @@ def get_normalized_image(original):
     resized_width = int(percent * len(original[0]))
     gray = cv2.cvtColor(original, cv2.COLOR_BGR2GRAY)
     gray = cv2.GaussianBlur(gray, (9, 9), 0)
-    cv2.imwrite("blur.jpg",gray)
+    save_debug_image("blue.jpg", gray)
     gray = cv2.resize(gray,(resized_width,resized_height))
-    cv2.imwrite("resized.jpg",gray)
+    save_debug_image("resized.jpg",gray)
     try:
         start_point = (0, 0) 
         end_point = (gray.shape[0], gray.shape[1]) 
         color = (255, 255, 255) 
         thickness = 10
         gray = cv2.rectangle(gray, start_point, end_point, color, thickness) 
-        cv2.imwrite("cropped.jpg",gray)
+        save_debug_image("cropped.jpg",gray)
     except:
         print("Failed to crop border")
     gray = cv2.bitwise_not(gray)
-    cv2.imwrite("inverted.jpg",gray)
+    save_debug_image("inverted.jpg",gray)
     
     return gray
     
@@ -60,7 +60,7 @@ def get_skew_angle(gray):
     thresh = cv2.threshold(gray, 0, 255,
         cv2.THRESH_BINARY | cv2.THRESH_OTSU)[1]
     kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (30, 5))
-    cv2.imwrite("thresh.jpg",thresh)
+    save_debug_image("thresh.jpg",thresh)
     dilate = cv2.dilate(thresh, kernel)
     contours, hierarchy = cv2.findContours(dilate, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
 
@@ -314,6 +314,8 @@ def envelopeProcessTrigger(image_path):
             return
         except requests.exceptions.RequestException as e:
             print(f"Error: {e}")
+    
+    os.remove(image_path)
         
 if __name__ == '__main__':  
     if len(sys.argv) != 2:

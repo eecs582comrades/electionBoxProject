@@ -19,6 +19,7 @@ def _processPicturesHelper(array):
         allEdgeIntensity.append([i, np.mean(laplacian_abs)])
     ranged_images = sorted(allEdgeIntensity, key=lambda x: x[1], reverse=True)
     return array[ranged_images[0][0]]
+
 def processPictures(pickleFile):
     start_time_all = time.perf_counter()
 
@@ -80,6 +81,8 @@ def processPictures(pickleFile):
         
         total_elapsed_all = time.perf_counter() - start_time_all
         print(f"[DEBUG][{time.perf_counter():.3f}] Finished processing => {cache_picture_path0}, total {total_elapsed_all:.3f} sec")
+    
+    os.remove(pickleFile)
 
 if __name__ == "__main__":
     print("THIS IS DEBUG ONLY - CALL processPictures() DIRECTLY WITH PICKLE FILE FOR PRODUCTION")

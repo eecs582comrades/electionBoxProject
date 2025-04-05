@@ -225,3 +225,4 @@ for contour in contours_final:
 
 # Save final validated barcode detections
 cv2.imwrite(os.path.join(output_dir, "5_candidates.png"), filtered_visualization_final)
+
