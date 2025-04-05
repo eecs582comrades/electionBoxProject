@@ -7,6 +7,10 @@
       "esnext"
     ],
     "allowJs": true,
+    "baseUrl": "app/",
+    "paths": {
+      "@/utils/*": ["utils/*"]
+    },
     "skipLibCheck": true,
     "strict": false,
     "noEmit": true,

@@ -27,11 +27,22 @@ const http = require('http');
 const bodyParser = require('body-parser');
 const mysql = require('mysql2');
 const path = require('path');
+const connectDB = require("./config/db");
+const loginRoute = require("./route/loginSignupRoute");
+const cookieParser = require("cookie-parser");
+require("dotenv").config();
 
 const cors = require('cors');
 
+// this has been used so to allow the server side to put the cookie in the frontend site. You should use the port number that has been used in frontend.
+const corsOptions = {
+  origin: "http://localhost:3000",
+  credentials: true, // Allow credentials
+};
+
+
 const app = express();
-app.use(cors());
+app.use(cors(corsOptions));
 const port = 9100;
 const localNetworkHost = '0.0.0.0';
 
@@ -44,6 +55,15 @@ const connection = mysql.createConnection({
   password: '',
   database: 'electionbox'
 });
+
+app.use(express.json());
+connectDB();
+// cookie parser is used for handling the cookies
+app.use(cookieParser());
+
+app.use("/", loginRoute);
+
+
 
 connection.connect((err) => {
   if (err) {
