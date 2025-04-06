@@ -1,3 +1,7 @@
+// Name(s): William Johnson, Katie Golder
+//5/5/25
+//https://nextjs.org/docs/pages/building-your-application/authentication
+
 "use client";
 import React, { useState } from "react";
 import LoginInput from "../components/loginInput";

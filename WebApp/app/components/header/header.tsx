@@ -1,3 +1,6 @@
+// Name(s): William Johnson, Katie Golder
+//5/5/25
+
 "use client"
 import { useEffect, useState } from "react";
 import Button from "../button";
@@ -20,10 +23,27 @@ const Header: React.FC = () => {
     router.push("/login"); // Redirect to the login page
   };
 
-  const logout = () => {
-    alert("Logging out...");
-    // You can add logout logic here (e.g., clearing session, tokens)
+  //ChatGPT
+  const logout = async () => {
+    try {
+      const res = await fetch("http://localhost:9100/api/logout", {
+        method: "POST",
+        credentials: "include", // Important: sends the cookie
+      });
+  
+      if (res.ok) {
+        console.log("Successfully logged out");
+        router.push("/login"); // Or update state to logged out
+      } else {
+        console.error("Logout failed");
+      }
+    } catch (error) {
+      console.error("Logout error:", error);
+    }
   };
+  
+  
+  
 
   if (loggedIn === null) {
     return <div>Loading Dog...</div>; // Render loading until login check completes

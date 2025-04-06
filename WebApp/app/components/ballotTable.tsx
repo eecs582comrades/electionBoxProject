@@ -1,4 +1,6 @@
 //Format ballot data into table
+// Name(s): William Johnson, Katie Golder
+
 "use client";
 
 export default function BallotTable({ data }) {

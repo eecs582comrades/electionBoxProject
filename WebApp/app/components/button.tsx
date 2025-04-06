@@ -1,3 +1,6 @@
+// Name(s): William Johnson, Katie Golder
+//5/5/25
+//https://nextjs.org/docs/pages/building-your-application/authentication
 // LoginButton.tsx
 import React, { MouseEvent } from "react";
 import { useRouter } from "next/navigation";

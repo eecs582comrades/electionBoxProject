@@ -1,3 +1,5 @@
+// Name(s): William Johnson, Katie Golder
+
 "use client";
 import { useEffect, useState } from "react";
 import { BallotTable } from "../components/ballotTable";
