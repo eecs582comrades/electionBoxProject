@@ -22,7 +22,7 @@ console.log("Hello World")
 // MySQL has no password, account accordingly
 //
 
-const express = require('express')
+const express = require('express');
 const http = require('http');
 const bodyParser = require('body-parser');
 const mysql = require('mysql2');
@@ -30,40 +30,31 @@ const path = require('path');
 const connectDB = require("./config/db");
 const loginRoute = require("./route/loginSignupRoute");
 const cookieParser = require("cookie-parser");
+const cors = require('cors');
 require("dotenv").config();
 
-const cors = require('cors');
-
-// this has been used so to allow the server side to put the cookie in the frontend site. You should use the port number that has been used in frontend.
-const corsOptions = {
-  origin: "http://localhost:3000",
-  credentials: true, // Allow credentials
-};
-
-
 const app = express();
-app.use(cors(corsOptions));
 const port = 9100;
 const localNetworkHost = '0.0.0.0';
 
-const bcrypt = require('bcrypt');
-const saltRounds = 10; // Number of salt rounds for hashing
+// CORS setup (must come before routes)
+app.use(cors({
+  origin: "http://localhost:3000",
+  credentials: true,
+}));
 
+// Middleware
+app.use(express.json());
+app.use(bodyParser.json());
+app.use(cookieParser());
+
+// MySQL connection
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: '',
   database: 'electionbox'
 });
-
-app.use(express.json());
-connectDB();
-// cookie parser is used for handling the cookies
-app.use(cookieParser());
-
-app.use("/", loginRoute);
-
-
 
 connection.connect((err) => {
   if (err) {
@@ -73,14 +64,17 @@ connection.connect((err) => {
   console.log('Connected to MySQL database');
 });
 
-http.createServer(app);
+// MongoDB connection (if you're using it)
+connectDB();
 
+// Routes
+app.use("/", loginRoute);
+
+// Static file serving (if needed)
 app.use(express.static(path.join(__dirname, '../app')));
-app.use(express.json());
 
-
-app.get('/test', (req, res) => { 
-  // const ballot_id = req.params.ballot_id;
+// Sample GET route
+app.get('/test', (req, res) => {
   connection.query('SELECT * FROM ballots', (err, results) => {
     if (err) {
       console.error('Error fetching ballots:', err);
@@ -88,30 +82,33 @@ app.get('/test', (req, res) => {
       return;
     }
     res.json(results);
-    return;
   });
 });
 
+// Example POST route
 app.post('/envelopeData', (req, res) => {
-  console.log(req.data);
-  connection.query('INSERT INTO ballots (barcode_data, date, time, location, name) AS (?, ?, ?, ?, ?)', [req.data['IMB'], req.data['DATE'], req.data['TIME'], req.data['LOCATION'], req.data['OCR']], (err, results) => {
-    if (err) {
-      console.error('Error pushing ballot data:', err);
-      res.status(500).send('Server error');
-      return;
+  const { IMB, DATE, TIME, LOCATION, OCR } = req.body;
+
+  connection.query(
+    'INSERT INTO ballots (barcode_data, date, time, location, name) VALUES (?, ?, ?, ?, ?)',
+    [IMB, DATE, TIME, LOCATION, OCR],
+    (err, results) => {
+      if (err) {
+        console.error('Error pushing ballot data:', err);
+        res.status(500).send('Server error');
+        return;
+      }
+      res.status(200).send("Ballot data saved.");
     }
-    res.status(200).send("200 OK");
-  });
+  );
 });
 
-//no
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
-})
-
+// Optional dummy POST route
 app.post('/', (req, res) => {
-    res.send('Got a POST request')
-})
+  res.send('Got a POST request');
+});
 
-// Registers the app to use bodyParser to make our lives easier and avoid needing to decode json frequently.
-app.use(bodyParser.json());
+// Start the server
+app.listen(port, localNetworkHost, () => {
+  console.log(`Server running at http://${localNetworkHost}:${port}`);
+});

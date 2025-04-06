@@ -1,3 +1,7 @@
+//Wil Johnson, Katie Golder
+//5/5/25
+//https://medium.com/@neupanesahitya1/how-to-implement-jwt-authentication-with-next-js-and-express-from-signup-to-secure-routes-226351bc1969
+
 // ProtectedRoutes.js
 import { isLoggedIn } from "../../utils/auth";
 import React, { useEffect, useState } from "react";
