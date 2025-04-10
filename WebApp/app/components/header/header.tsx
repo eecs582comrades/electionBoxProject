@@ -43,17 +43,21 @@ const Header: React.FC = () => {
   };
   
   
-  
 
   if (loggedIn === null) {
-    return <div>Loading Dog...</div>; // Render loading until login check completes
+    return <div>Pending Login...</div>; // Render loading until login check completes
   }
 
   return (
-    <Button
-      text={loggedIn ? "Log Out" : "Log In"}
-      handleButton={loggedIn ? logout : login}
-    />
+    <div className="text-center">
+      <div className="text-left">
+        <Button
+          text={loggedIn ? "Log Out" : "Log In"}
+          handleButton={loggedIn ? logout : login}
+        />
+      </div>
+      <h2 className="capitalize text-2xl font-semibold">Advanced Ballot Drop Box Information</h2>
+    </div>
   );
 };
 
