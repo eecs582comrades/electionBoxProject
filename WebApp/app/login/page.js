@@ -1,4 +1,4 @@
-// Name(s): William Johnson, Katie Golder
+// Name(s): William Johnson, Katie Golder, Emily Tso
 //5/5/25
 //https://nextjs.org/docs/pages/building-your-application/authentication
 
@@ -56,7 +56,7 @@ const Page = () => {
         <Button text="Sign Up" link="/signup" shadowColor={"pink"} />
       </div>{" "}
        
-      <div className="bg-white p-8 rounded-lg shadow-2xl w-[25rem] border-2 border-solid border-black">
+      <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-2xl w-[25rem] border-2 border-solid border-black dark:border-gray-700">
         <form className="space-y-4">
           <LoginInput
             label={"Email:"}

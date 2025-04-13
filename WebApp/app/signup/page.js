@@ -1,5 +1,5 @@
 //DO NOT KEEEEEEEEEEEEEEEEEEEEEP XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-// Name(s): William Johnson, Katie Golder
+// Name(s): William Johnson, Katie Golderm Emily Tso
 //5/5/25
 //https://medium.com/@neupanesahitya1/how-to-implement-jwt-authentication-with-next-js-and-express-from-signup-to-secure-routes-226351bc1969
 
@@ -64,7 +64,7 @@ const Page = () => {
         <Button text="Login" link="/login" shadowColor={"yellow"} />
       </div>
        
-      <div className="bg-white p-8 rounded-lg shadow-2xl w-[25rem] border-2 border-solid border-black relative">
+      <div className="bg-white dark:bg-gray-900 p-8 rounded-lg shadow-2xl w-[25rem] border-2 border-solid border-black dark:border-gray-700">
         <form className="space-y-4">
           <LoginInput
             label={"Email:"}
